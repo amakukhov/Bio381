@@ -1,0 +1,16 @@
+---
+title: "April’s Bio381 Homepage"
+author: "April M"
+date: "January 18, 2017"
+output: html_document
+---
+
+# Computational Biology
+
+### April Makukhov
+
+Lists:
+
+* [Assignment 1](test.html)   
+* Assignment 2   
+
