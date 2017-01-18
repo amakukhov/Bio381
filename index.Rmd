@@ -1,16 +1,30 @@
 ---
-title: "April’s Bio381 Homepage"
-author: "April M"
+title: "April Makukhov’s Bio381 Homepage"
 date: "January 18, 2017"
 output: html_document
 ---
 
-# Computational Biology
+### Computational Biology: Spring 2017
 
-### April Makukhov
 
-Lists:
+### About Me:
+##### I am an aspiring marine biologist and second year PhD student in Dr. Melissa Pespeni's lab at the University of Vermont.  
 
-* [Assignment 1](test.html)   
-* Assignment 2   
+![](/Users/amakukhov/Desktop/CA Fieldwork beach photo.jpg)
 
+Me in California during Fall 2016 field collections of the purple sea urchin, *Strongylocentrotus purpuratus*
+
+## Homeworks:
+
+* [Assignment 1]()     
+
+## Notes:
+
+#####Lecture
+* [January 17, 2017: Intro Notes & GitHub Lingo]()
+
+
+
+
+#####Lab   
+* [January 18, 2017: Intro to GitHub, RMarkdown, and Making Homepage]()   
