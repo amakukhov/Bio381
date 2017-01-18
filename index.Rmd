@@ -12,7 +12,5 @@ output: html_document
 Lists:
 
 * [Assignment 1](test.html)   
-* Assignment 2
-
-I HAVE MADE A HUGE MISTAKEEEE!!!
+* Assignment 2   
 
