@@ -24,11 +24,11 @@ Me in California during Fall 2016 field collections of the purple sea urchin, *S
 
 ## Notes:
 
-#####Lecture
+####Lecture
 * [January 17, 2017: Intro Notes & GitHub Lingo]()
 
 
 
 
-#####Lab   
+####Lab   
 * [January 18, 2017: Intro to GitHub, RMarkdown, and Making Homepage]()   
