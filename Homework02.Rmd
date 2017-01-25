@@ -7,6 +7,9 @@ output: html_document
 
 # Thinking on Paper
 
-This is the first tool that I used to structure my hypotheses.
+**These are the tools that I used (or attempted to use) to structure my hypotheses for my OA experiment:**
 
 ![1. PATH ANALYSIS](OAProject_PathAnalysis.JPG)
+![2. LOGIC TREE](OAProject_PathAnalysis.JPG)
+![3. LOOK-UP TABLE](OAProject_PathAnalysis.JPG)
+![4. MOCK DATA](OAProject_PathAnalysis.JPG)
