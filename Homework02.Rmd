@@ -1,0 +1,12 @@
+---
+title: "Homework 2"
+author: "April D. Makukhov"
+date: "January 25, 2017"
+output: html_document
+---
+
+# Thinking on Paper
+
+This is the first tool that I used to structure my hypotheses.
+
+![Path Analysis](OAProject_PathAnalysis.JPG)
