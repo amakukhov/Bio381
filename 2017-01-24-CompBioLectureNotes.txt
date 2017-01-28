@@ -1,0 +1,43 @@
+Computational Biology (Bio 381) Lecture Notes
+April D. Makukhov
+January 24, 2017
+
+New Project
+Directory on Desktop
+
+Tools, global options
+
+-Unclick Insert matching parens/quotes
+-Check soft-wrap R source files
+
+--------------------------------------------------------
+
+•Plain-text files: 
+-simple characters only, can generally open in any computer, 'run the world'. WYSIWYW (what you see is what you want)
+
+•Several languages within them:
+1) LaTex - thousands of typesetting commands (we will use when we make slides and when we make equations in R Markdown)
+2) Markdown - very simple version of LaTex
+3) R Markdown - (many versions of Markdown, like dialects of a language). Will be able to mix in lines of R code and be able to run.
+
+•We will create a plain-text file: Filename.Rmd (R markdown file extension)
+•We will "knit" our R markdown file into 1 of 3 possible formats:
+	-Filename.html
+	-Filename.pdf
+	-Filename.docx
+
+R Markdown document:
+
+•yaml: (yet another markdown language) - for the most part we won't mess with it (spacing of it quite important)	
+----
+
+----	
+
+• Markdown template - we erase this at the beginning and insert our own stuff
+
+•Ctrl (or command), shift, K = "knit"
+
+• Help, Markdown Quick Reference provides text formatting reference info
+• Command + alt+ i = insert R-code chunk
+
+Format I like: highlight: pygments, theme: cerulean

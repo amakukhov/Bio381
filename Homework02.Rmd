@@ -12,10 +12,10 @@ output: html_document
 ![1. PATH ANALYSIS](OAProject_PathAnalysis.JPG)
 
 
-![2. LOGIC TREE](OAProject_PathAnalysis.JPG)
+![2. LOGIC TREE](OAProject_LogicTree.JPG)
 
 
-![3. LOOK-UP TABLE](OAProject_PathAnalysis.JPG)
+![3. LOOK-UP TABLE](OAProject_LookUpTable.JPG)
 
 
-![4. MOCK DATA](OAProject_PathAnalysis.JPG)
+![4. MOCK DATA](OAProject_MockData.JPG)

@@ -1,0 +1,42 @@
+Computational Biology (Bio 381) Lab Notes
+April D. Makukhov
+January 18, 2017
+
+class website (HW solutions): lvash.github.io/Bio381
+Lecture website: https://gotellilab.github.io/Bio381
+
+DUE: email ngotelli@uvm.edu
+1) Fun fact
+2) amakukhov.github.io/Bio381
+3) github.com/amakukhov
+
+Following Lecture 1 (GitHub) Notes:
+
+-open Rstudio and create New Project
+-in this project, do File, New File, R Markdown. Created an R Markdown file called "Homepage" (keep as html output)
+
+
+Add to gitignore:
+.Ruserdata
+*.Rproj
+
+
+• For R Markdown:
+
+-Specific formatting. To create a list (or bullet points), use * and then 3 spaces after you're done with that line
+
+•Click "knit"
+
+-ouput settings/options: tango, united
+
+# Computational Biology
+
+### April Makukhov
+
+Lists:
+
+* [Assignment 1](test.html)   
+* Assignment 2 
+
+# For including a photo
+![Frog pic! Captions go here in the brackets](file.jpg here)

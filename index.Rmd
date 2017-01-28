@@ -1,23 +1,25 @@
 ---
 title: "April Makukhov’s Bio381 Homepage"
-date: "January 18, 2017"
 output:
  prettydoc::html_pretty:
     theme: cayman
     highlight: github
 ---
 
-### Computational Biology: Spring 2017
+## Computational Biology: Spring 2017
 
 
-### About Me:
-##### I am an aspiring marine biologist and second year PhD student in Dr. Melissa Pespeni's lab at the University of Vermont. [Link to my UVM webpage](http://www.uvm.edu/~biology/?Page=students/makukhov.php&SM=facultysubmenu.html)  
+## About Me:
+#### I am an aspiring marine biologist and second year PhD student in Dr. Melissa Pespeni's lab at the University of Vermont. [Link to my UVM webpage.](http://www.uvm.edu/~biology/?Page=students/makukhov.php&SM=facultysubmenu.html)
 
 ![](IMG_2250.jpg)
 
-Me in California during Fall 2016 field collections of the purple sea urchin, *Strongylocentrotus purpuratus*.
+##### Me in California during Fall 2016 field collections of the purple sea urchin, *Strongylocentrotus purpuratus*.
 
-## Homeworks:
+
+[Link to my current CV.](MAKUKHOV_April_CV_January2017.docx)
+
+## Homework:
 
 * Assignment 1: Links and fun fact emailed to Nick     
 * [Assignment 2](Homework02.html)
@@ -25,10 +27,13 @@ Me in California during Fall 2016 field collections of the purple sea urchin, *S
 ## Notes:
 
 ####Lecture
-* [January 17, 2017: Intro Notes & GitHub Lingo]()
-
+* January 17, 2017: Intro Notes & GitHub Lingo (handwritten in notebook)
+* January 19, 2017: Tools for Thinking Hypotheses Through on Paper (handwritten in notebook)
+* [January 24, 2017: Plain-text Files & RMarkdown & LaTeX](2017-01-24-CompBioLectureNotes.txt) 
+* January 26, 2017: Plain-text Files & RMarkdown & LaTeX continued (see ClassDemos Rproject)
 
 
 
 ####Lab   
-* [January 18, 2017: Intro to GitHub, RMarkdown, and Making Homepage]()   
+* [January 18, 2017: Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)   
+* January 25, 2017: Applying Thinking on Paper Tools to our Research/Presenting to Class (see Assignment 2 above)
