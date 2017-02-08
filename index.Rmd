@@ -21,8 +21,13 @@ output:
 
 ## Homework:
 
-* Assignment 1: Links and fun fact emailed to Nick     
+* **Assignment 1:** Links and fun fact emailed to Nick     
 * [Assignment 2](Homework02.html)
+* Assignment 3: Uploaded soon, was sick :(
+* Assignment 4: Data upload & Regular Expressions
+    + [Uploading Data in R](Assignment4_DataUploadInR.html)
+    + [Regular Expressions](Assignment4_RegEx.html)
+  
 
 ## Notes:
 

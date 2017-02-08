@@ -1,0 +1,18 @@
+---
+title: 'Assignment 4: Loading Data into R'
+author: "April D. Makukhov"
+date: "February 8, 2017"
+output: html_document
+---
+
+
+```{r}
+morph <- read.table("OASV2_BodyLengthMeasurements_Oct2016.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+str(morph)
+summary(morph)
+table(morph$Condition)
+head(morph)
+tail(morph)
+```
+
+
