@@ -27,7 +27,10 @@ output:
 * Assignment 4: Data upload & Regular Expressions
     + [Uploading Data in R](Assignment4_DataUploadInR.html)
     + [Regular Expressions](Assignment4_RegEx.html)
-  
+* Assignment 5: Working in R
+    + [Assignment](Assignment5_WorkinginR.html)
+    + [Notes](RNotes_Assignment5.R)
+    
 
 ## Notes:
 

@@ -1,0 +1,146 @@
+---
+title: "Assignment 5"
+author: "April D. Makukhov"
+date: "February 15, 2017"
+output: html_document
+---
+
+
+### Problem 1
+```{r}
+x=1.1
+a=2.2
+b=3.3
+
+# part a
+z <- x^(a^b)
+print(z)
+
+# part b
+z <- (x^a)^b
+print(z)
+
+# part c
+z <- 3*x^3 + 2*x^2 +1
+print(z)
+
+# part d
+help(floor)
+(z %% 1)
+floor((z %% 1)*10)
+
+# Another way to do part d (Lauren Ash)
+round((z-round(z,0)),1)*10
+
+```
+
+### Problem 2
+```{r}
+# part a
+z <- c(rep(1:8), rep(7:1))
+print(z)
+
+# part b
+z <- rep(1:5, c(1:5))
+print(z)
+
+# part c
+z <- rep(5:1, c(1:5))
+print(z)
+```
+
+### Problem 3
+```{r}
+xy <- runif(2)
+xy
+
+theta <- atan(xy[2]/xy[1])
+theta
+
+r<-sqrt((xy[1]^2) + (xy[2]^2))
+r
+
+p <- c(r, theta)
+p
+```
+
+### Problem 4
+```{r}
+queue <- c("sheep", "fox", "owl", "ant")
+queue
+
+# part a
+queue[5] <- "serpent"
+queue
+
+# part b
+queue <- queue[-1]
+queue
+
+# part c
+queue<- c("donkey", queue)
+queue
+
+# part d
+queue <- queue[-5]
+queue
+
+# part e
+queue <- queue[-3]
+queue
+
+# part f
+queue <- c(queue[1:2], "aphid", queue[3])
+queue
+
+# part g
+grep("aphid", queue)
+```
+
+### Problem 5
+```{r}
+z <- (1:100)
+z<- z[-which(z%%2==0)]
+z<- z[-which(z%%3==0)]
+z<- z[-which(z%%7==0)]
+z
+
+# A one-line way to do this
+z <- z[z%%2 !=0 & z%%3 !=0 & z%%7 !=0]
+print(z)
+```
+
+### Problem 6
+```{r}
+z<-runif(1000)
+print(z)
+
+# part a
+a <- c((mean(z < 0.1)), (mean(z > 0.9)), (mean(z > 0.45 & z < 0.55)))  
+a
+
+# part b
+z<-log10(z)
+head(z)
+b <- c((mean(z < 0.1)), (mean(z > 0.9)), (mean(z > 0.45 & z < 0.55)))  
+b
+
+z<-z^2
+head(z)
+c <- c((mean(z < 0.1)), (mean(z > 0.9)), (mean(z > 0.45 & z < 0.55)))  
+c
+
+z<-(exp(1))^z
+head(z)
+d <- c((mean(z < 0.1)), (mean(z > 0.9)), (mean(z > 0.45 & z < 0.55)))  
+d
+
+z<-sqrt(z)
+head(z)
+e <- c((mean(z < 0.1)), (mean(z > 0.9)), (mean(z > 0.45 & z < 0.55)))  
+e
+
+```
+
+
+
