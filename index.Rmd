@@ -20,7 +20,9 @@ output:
 [Link to my current CV.](MAKUKHOV_April_CV_January2017.docx)
 
 ## R Presentation on SNPRelate Package: 04/19/2017
-[Code for Presentation Here](RPresentationCode_04_19_17.html)
+* [Download Data File Here](OASV2-rmdup-Bio381-filtered.recode.vcf)
+* [Code for Presentation Here](RPresentationCode_04_19_17.html)
+
 
 ## Homework:
 
