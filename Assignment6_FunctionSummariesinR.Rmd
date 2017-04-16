@@ -1,0 +1,200 @@
+---
+title: "Assignment 6"
+author: "April D. Makukhov"
+date: "2/22/2017"
+output: html_document
+---
+```{r}
+
+# Takes a subsetted list of functions from Hadley Advanced R
+# Assigns each randomly to a student in the class
+# 19 February 2017
+# ADM
+
+# Ensure that the same random number sequence is used by everyone.
+set.seed(100) 
+
+# The Hadley R functions:
+firstToLearn <- c("str", "?")
+
+operators <- c("%in%", "match", "=", "<-", "<<-", "$", "[",
+               "[[", "head", "tail", "subset", "with", "assign", "get")
+comparisons <- c("all.equal", "identical", "!=", "==", ">", ">=", "<", "<=",  "is.na", "complete.cases",  "is.finite")
+
+basicMath <- c("*", "+", "-", "/", "^", "%%", "%/%", "abs", "sign", "acos", "asin", "atan", "atan2", "sin", "cos", "tan", "ceiling", "floor", "round", "trunc", "signif", "exp", "log", "log10", "log2", "sqrt", "max", "min", "prod", "sum", "cummax", "cummin", "cumprod", "cumsum", "diff", "pmax", "pmin", "range", "mean", "median", "cor", "sd", "var", "rle")
+
+logicalSets <- c("&", "|", "!", "xor", "all", "any", "intersect", "union", "setdiff", "setequal", "which")
+
+vectorsMatrices <- c("c", "matrix", "length", "dim", "ncol", "nrow", "cbind", "rbind", "names", "colnames", "rownames", "t", "diag", "sweep", "as.matrix", "data.matrix")
+
+makingVectors <- c("c", "rep", "rep_len", "seq", "seq_len", "seq_along", "rev", "sample", "choose", "factorial", "combn", "is.character", "is.numeric", "is.logical", "as.character", "as.numeric", "as.logical")
+
+listsDataFrames <- c("list", "unlist",  "data.frame", "as.data.frame", "split", "expand.grid")
+
+output <- c("print", "cat", "message", "warning", "dput", "format", "sink", "capture.output", "sprintf")
+
+readingWritingData <- c("data", "count.fields", "read.csv", "write.csv", "read.delim", "write.delim", "read.fwf", "readLines", "writeLines", "readRDS", "saveRDS", "load", "save")
+
+# Combine all of the function lists and randomize the order:
+RFunctions <- c(firstToLearn, operators, comparisons, basicMath, logicalSets, vectorsMatrices, makingVectors, listsDataFrames, output, readingWritingData)
+
+RFunctions <- sample(RFunctions)
+
+# Create class list
+classNames <- c("Alger", "Ashlock", "Burnham", "Clark", "Kazenel", "Keller", "Looi", "Makukhov", "Mikucki", "Nevins", "Southgate") 
+
+# Assign functions
+functionAssignments <- rep_len(classNames, length.out=length(RFunctions))
+
+# Bind the two columns into a data frame
+functionsFinal <- data.frame(functionAssignments,RFunctions)
+
+splitDF <- split(functionsFinal, functionsFinal$functionAssignments)
+splitDF$Makukhov
+
+```
+
+### `log10`
+#### April D. Makukhov
+
+This function computes the logarithm of a numeric vector, specifically computing in base 10. As we've learned previously in mathematics with logarithms, the input and output are switched; that is, when computing log10(x), we are actually specifying the output value 'x' and want to know what input value 'y' is the exponent with base 10 that gives us value x. Thus, we provide the 'output' in a sense by giving the expected value 'x' and are in return given the 'input', which is the exponent and the answer to our logarithmic computation.
+
+```{r}
+# We can find the value of log10(x) as follows:
+log10(10)
+
+# Here, we see the output from above is 1. This is because base 10 (which is the base we are in because we are saying 'log10' instead of just 'log') to an exponent=1 is equal to 10, the value in our ()
+
+# Another example
+log10(100) # 10^2 =100, so the output of this should be 2, as the output from a logarithic computation IS the exponent.
+
+# If we want to take the logarithm of a different base, we would just change the 10 value and could do so as follows:
+log(10, base = 3) # Here we are specificying we are in base 3, instead of 10
+
+# base 10 and base 2 are generally the more common logarithmic bases, which is why log10 and log 2 are both already functions. But, we could use the above example with base 10 and still get the same vale as log10. For example:
+log(10, base = 10)
+log(100, base =10)
+
+```
+
+
+### `save`
+#### April D. Makukhov
+This functions allows the user to save objects in R into an external Rdata file that can then be used later in R via functions such as 'load' or 'attach'. save.image() is an extension or shortcut of the 'save' function that allows the use to save the current workspace in R to be able to load it back in later. Basically, if you want to save a set of specific R objects in your code or to save your workspace, this is one way to do so.
+
+
+```{r}
+x <- runif(10)
+z <- list(a=1, b=2, c=TRUE, d=FALSE, e = "turtle")
+save(x, z, file = "Example.RData")
+
+# now, if you clear your R environment with the little broom icon, and use the following code below to load in your Rdata file, you can go back to using the variables you used before, x and z, without having to re-run script. Essentially, the save function is saving your R environment.
+
+load("Example.RData")
+x
+z
+```
+
+### `^`
+#### April D. Makukhov
+
+This symbol is an operator used in mathematics to symbolize an exponent. It can be used on numeric or complex vectors or objects labeled as a numeric value.
+
+```{r}
+10^2 # This calculates 10 to the 2nd power
+
+x=3
+y <- x^5 # Here were are setting y to be represented as x to the 5th power, using the ^ symbol to set 5 as the exponential value
+print(y)
+
+cat=12
+dog=3
+cat^dog # we can do this with characters as well as long as those characters are represented by a numeric value
+```
+
+
+### `abs`
+#### April D. Makukhov
+This function computes the absolute value of a numeric or complex vector. Recall from mathematics that the absolute value of a number (or variable representing numbers, such as x) is the positive value of that number or variable, so using the abs function would cause your value(s) to all be positive (unless you were to use any other arithmetic operators that may change that).
+
+```{r}
+abs(2)
+abs(-2) # these outputs should be the same, because the absolute, or 'positive', value for digits 2 and -2 is "2".
+
+x <- c(2, 3, -8, -9.7, 4)
+abs(x) # here, you will notice that the outputs for all of these value, even for this more complex vector, are positive
+```
+
+
+### `!=`
+#### April D. Makukhov
+This specific operator translates in R as "not equal to" (the not operator being the ! component and = indicating "equal"). This is very useful for when you want an output from vectors and dataframes that are not equal to a numeric value.
+
+```{r}
+# In this example, I am creating a vector 'x' that is made up of the following values
+x <- c(0,1,2,3,0,4,5,0,8,2,0,0,1)
+
+# Now I want to make a new vector 'y' that contains all values from except for 0, so I use the != command to specifcy "not equal to zero". 
+y <- x[which(x != 0)]
+y # notice that the output contains all the values of the x vector except for 0
+```
+
+
+### `xor`
+#### April D. Makukhov
+This command referred to as "exclusively OR"; it is used for when you want to make a statement in R where the outcome is one OR the other, but not both. For example, if you were flipping a coin, xor would be relevant to this situation because you can have heads or tails in a flip, but you can't have both one or the other in a flip, it can only be one (so this is an 'exclusive' OR). This function is particularly useful for TRUE/FALSE statements (or 0s and 1s).
+
+```{r}
+# creating x and y vectors made up of the same length of values, either 0 or 1 for each value
+x<-c(1,0,0,1,1)
+y<-c(0,0,1,0,1)
+xor(x,y) #When we use xor, it takes the ones that are the same, either both 0 or 1 for x and y, and outputs a "FALSE", because the exclusive OR condition is not being satisfied. However, you'll notice the first, third, and fifth, values to output a "TRUE", because the values are different at those positions in both vectors (either 0 or 1, but not both).
+
+```
+
+### `var`
+#### April D. Makukhov
+This function calculates the variance for vectors, matrices, or data frames. The main argument for this function is x, which specifies a numeric vector, matrix, or data frame. If comparing to another vector, matrix, or data frame, then y would be used for such an object. For this function, there is also a logical argument na.rm, which asks whether missing values should be removed (so can specify TRUE or FALSE with this argument).
+
+```{r}
+var(1:10) # this provides the variance for a vector made up of values 1 through 10.
+
+x<-c(2,3,5,7,9)
+y<-c(1,4,2,6,2)
+var(x,y) # finding the variance between vectors x and y
+```
+
+### `pmax`
+#### April D. Makukhov
+The 'p' in pmax stands for 'parallel'. This function outputs the parallel maxima of values inputed. Essentially, this means you can take one or more vectors and, with pmax, create a single vector that has only the maxima between the multiple vectors. pmax allows you to find the maximum values among multiple vectors and receive an output with those maximum values.
+```{r}
+# Making 2 vectors, x and y, of the same length
+x <- c(1,5,7,9,3,15,37,128,4)
+y <- c(2,8,12,54,207,95,73,122,62)
+pmax(x,y) # this gives a single output vector that contains the maximum values of these two vectors with respect to position. For example, the first value of the pmax vector is 2 because '2' in the first position of vector y is greater than '1' in the first position of vector x.
+```
+
+### `list`
+#### April D. Makukhov
+This function is used to create a list in R, which can be made up of numeric values or even variable names.
+
+```{r}
+y<-list(1,2,3,4)
+y
+
+x<-list('apple','orange','strawberry','kiwi')
+x
+
+z<- c(x,y) # here is an example where I am combining the 2 lists I made above into one vector
+
+z
+
+# list is also a useful function for plotting. In this example below, we are using data that is already in R (car data), and creating a vector z that is making a list made up of components 'x' and 'y', and each of those components is equal to a column of data from the cars dataset.
+
+z <-list(x=cars[,1], y=cars[,2]) # making a list with 2 components, x and y, where x is comprised of the cars data in column 1 of the dataset, and y is comprised of the cars data in column 2 of the dataset
+
+z
+ 
+plot(z) # after creating this vector z, we can see the 2 components of the list, z$x and z$y, plotted against each other
+```
+

@@ -1,0 +1,104 @@
+---
+title: "Assignment 8"
+author: "April D. Makukhov"
+date: "3/8/2017"
+output: html_document
+---
+## (1) LINEAR REGRESSION
+
+
+### Linear Regression: Output
+```{r}
+# Linear Regression Output Function
+# Function: fitLinRegOutput
+# Fits a simple linear regression, provides the output only (without plot)
+# inputs: numeric vector of predictor variable 'x' and response variable 'y'
+# outputs: slope, p-value, standard error, and t-value
+fitLinRegOutput <- function(x=runif(37),y=runif(37)){
+  myModel <- lm(y~x)
+  myOutput <-c(slope=summary(myModel)$coefficients[2,1],
+            pValue=summary(myModel)$coefficients[2,4],
+            stdErr=summary(myModel)$coefficients[2,2],
+            tValue=summary(myModel)$coefficients[2,3])
+  return(myOutput)
+}            
+
+fitLinRegOutput()
+```
+
+
+### Linear Regression: Plot
+```{r}
+# Linear Regression Plot Function
+# Function: fitLinRegPlot
+# Plots linear regression
+# inputs: numeric vector of predictor variable 'x' and response variable 'y'
+# output: linear regression plot
+fitLinRegPlot <- function(x=runif(20),y=runif(20)){
+  myModel <- lm(y~x)
+  myOutput <- plot(x=x,y=y, pch=21, bg="turquoise", main = "Linear Regression Example", xlab = "Hours", ylab = "Height (m)")
+  abline(myModel)
+  return(myOutput)
+}
+
+fitLinRegPlot()
+```
+
+### Testing Linear Regression Functions
+```{r message=FALSE, warning=FALSE}
+# Making matrix for testing function
+data <- matrix(c(1:20), ncol = 2, nrow = 10)
+x<-data[,1]
+y<-data[,2]
+
+# Testing LinRegOutput Function
+fitLinRegOutput(x=x,y=y)
+
+# Testing LinRegPlot Function
+fitLinRegPlot(x=x,y=y)
+
+```
+
+
+## (2) ANOVA
+
+
+### ANOVA: Output
+```{r}
+# ANOVA Output Function
+# Function: fitANOVA
+# Runs an analysis of variance test on the data, provides the output only (without plot)
+# inputs: numeric vectors xVar and yVar
+# outputs: test statistic, df, p-value
+
+
+#xVar=as.factor(rep(c("pH_8.1","pH_7.5","pH_7.0"),each=50))
+#rand<-seq(from=100,to=350,by=0.5)
+#sample(rand,150,replace=TRUE)
+
+fitANOVA <- function(xVar=as.factor(rep(c("pH_8.1","pH_7.5","pH_7.0"),each=50)), yVar= sample(seq(from=100,to=350,by=0.5), 150, replace=TRUE)){
+  dataFrame <- data.frame(xVar,yVar)
+  myAOVModel <- aov(yVar~xVar,data = dataFrame)
+  
+  myAOVOutput<-c(summary(myAOVModel),print(myAOVModel))
+  return(myAOVOutput)
+}
+
+
+```
+
+
+### ANOVA: Plot
+```{r}
+
+```
+
+
+
+### Testing ANOVA Functions
+```{r}
+
+```
+
+
+

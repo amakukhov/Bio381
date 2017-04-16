@@ -19,17 +19,27 @@ output:
 
 [Link to my current CV.](MAKUKHOV_April_CV_January2017.docx)
 
+## R Presentation on SNPRelate Package: 04/19/2017
+[Code for Presentation Here](RPresentationCode_04_19_17.html)
+
 ## Homework:
 
 * **Assignment 1:** Links and fun fact emailed to Nick     
 * [Assignment 2](Homework02.html)
-* Assignment 3: Uploaded soon, was sick :(
+* Assignment 3: Uploading soon, was sick :(
 * Assignment 4: Data upload & Regular Expressions
     + [Uploading Data in R](Assignment4_DataUploadInR.html)
     + [Regular Expressions](Assignment4_RegEx.html)
 * Assignment 5: Working in R
     + [Assignment](Assignment5_WorkinginR.html)
     + [Notes](RNotes_Assignment5.R)
+* Assignment 6
+* Assignment 7
+* Assignment 8
+* Assignment 9
+* Assignment 10
+* Assignment 11
+* Assignment 12
     
 
 ## Notes:
