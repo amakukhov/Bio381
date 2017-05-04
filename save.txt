@@ -1,0 +1,16 @@
+### `save`
+#### April D. Makukhov
+This functions allows the user to save objects in R into an external Rdata file that can then be used later in R via functions such as 'load' or 'attach'. save.image() is an extension or shortcut of the 'save' function that allows the use to save the current workspace in R to be able to load it back in later. Basically, if you want to save a set of specific R objects in your code or to save your workspace, this is one way to do so.
+
+
+```{r}
+x <- runif(10)
+z <- list(a=1, b=2, c=TRUE, d=FALSE, e = "turtle")
+save(x, z, file = "Example.RData")
+
+# now, if you clear your R environment with the little broom icon, and use the following code below to load in your Rdata file, you can go back to using the variables you used before, x and z, without having to re-run script. Essentially, the save function is saving your R environment.
+
+load("Example.RData")
+x
+z
+```

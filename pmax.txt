@@ -1,0 +1,9 @@
+### `pmax`
+#### April D. Makukhov
+The 'p' in pmax stands for 'parallel'. This function outputs the parallel maxima of values inputed. Essentially, this means you can take one or more vectors and, with pmax, create a single vector that has only the maxima between the multiple vectors. pmax allows you to find the maximum values among multiple vectors and receive an output with those maximum values.
+```{r}
+# Making 2 vectors, x and y, of the same length
+x <- c(1,5,7,9,3,15,37,128,4)
+y <- c(2,8,12,54,207,95,73,122,62)
+pmax(x,y) # this gives a single output vector that contains the maximum values of these two vectors with respect to position. For example, the first value of the pmax vector is 2 because '2' in the first position of vector y is greater than '1' in the first position of vector x.
+```

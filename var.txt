@@ -1,0 +1,11 @@
+### `var`
+#### April D. Makukhov
+This function calculates the variance for vectors, matrices, or data frames. The main argument for this function is x, which specifies a numeric vector, matrix, or data frame. If comparing to another vector, matrix, or data frame, then y would be used for such an object. For this function, there is also a logical argument na.rm, which asks whether missing values should be removed (so can specify TRUE or FALSE with this argument).
+
+```{r}
+var(1:10) # this provides the variance for a vector made up of values 1 through 10.
+
+x<-c(2,3,5,7,9)
+y<-c(1,4,2,6,2)
+var(x,y) # finding the variance between vectors x and y
+```

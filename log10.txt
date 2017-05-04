@@ -1,0 +1,22 @@
+### `log10`
+#### April D. Makukhov
+
+This function computes the logarithm of a numeric vector, specifically computing in base 10. As we've learned previously in mathematics with logarithms, the input and output are switched; that is, when computing log10(x), we are actually specifying the output value 'x' and want to know what input value 'y' is the exponent with base 10 that gives us value x. Thus, we provide the 'output' in a sense by giving the expected value 'x' and are in return given the 'input', which is the exponent and the answer to our logarithmic computation.
+
+```{r}
+# We can find the value of log10(x) as follows:
+log10(10)
+
+# Here, we see the output from above is 1. This is because base 10 (which is the base we are in because we are saying 'log10' instead of just 'log') to an exponent=1 is equal to 10, the value in our ()
+
+# Another example
+log10(100) # 10^2 =100, so the output of this should be 2, as the output from a logarithic computation IS the exponent.
+
+# If we want to take the logarithm of a different base, we would just change the 10 value and could do so as follows:
+log(10, base = 3) # Here we are specificying we are in base 3, instead of 10
+
+# base 10 and base 2 are generally the more common logarithmic bases, which is why log10 and log 2 are both already functions. But, we could use the above example with base 10 and still get the same vale as log10. For example:
+log(10, base = 10)
+log(100, base =10)
+
+```

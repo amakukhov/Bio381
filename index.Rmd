@@ -1,5 +1,5 @@
 ---
-title: "April Makukhov’s Bio381 Homepage"
+title: "April Garrett’s Bio381 Homepage"
 output:
  prettydoc::html_pretty:
     theme: cayman
@@ -26,7 +26,7 @@ output:
 
 ## Homework:
 
-* **Assignment 1:** Links and fun fact emailed to Nick     
+* Assignment 1: Links and fun fact emailed to Nick     
 * [Assignment 2](Homework02.html)
 * Assignment 3: Uploading soon, was sick :(
 * Assignment 4: Data upload & Regular Expressions
@@ -35,13 +35,26 @@ output:
 * Assignment 5: Working in R
     + [Assignment](Assignment5_WorkinginR.html)
     + [Notes](RNotes_Assignment5.R)
-* Assignment 6
-* Assignment 7
-* Assignment 8
-* Assignment 9
-* Assignment 10
-* Assignment 11
-* Assignment 12
+* [Assignment 6](Assignment6_FunctionSummariesinR.html)
+* Assignment 7: Finish function summaries & provide text files to Lauren
+    + ['list' function](list.txt)
+    + ['pmax' function](pmax.txt)
+    + ['var' function](var.txt)
+    + ['xor' function](xor.txt)
+    + ['!=' function](ExclamationPointEqualSign.txt)
+    + ['abs' function](abs.txt)
+    + ['^' function](carrot_operator.txt)
+    + ['save' function](save.txt)
+    + ['log10' function](log10.txt)
+* Assignment 8: Models and plots in R
+    + [Assignment](Assignment8_MakingFunctionsAndPlotsinR.html)
+    + [Notes](HW8_Script.R)
+* Assignment 9: Running models on random dataset
+    + Assignment
+* Assignment 10: For loops
+    + Assignment
+* Assignment 11: Spatial analysis in R
+    + [Assignment/Notes](Assignment12_SpatialAnalysis.R)
     
 
 ## Notes:

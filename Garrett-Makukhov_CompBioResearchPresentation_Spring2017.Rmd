@@ -1,0 +1,239 @@
+---
+output: beamer_presentation
+---
+## \huge Morphological and genomic responses of *Strongylocentrotus purpuratus* larval populations to experimental acidification     
+\bigskip
+\bigskip
+\begin{center}
+\LARGE April D. Garrett     
+\end{center}
+\begin{center}
+\small Computational Biology Research Presentation     
+\end{center}
+\begin{center}
+\small May 3rd, 2017
+\end{center}
+\begin{picture}(350,250)
+\put(05,150){\includegraphics[height=3.5cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/urchins.png}}
+\put(00,00){\begin{minipage}[t]{1\linewidth}
+\end{minipage}}
+\end{picture}
+
+
+
+##\LARGE Ocean Acidification:“The Other CO2 Problem”
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/OAProcess.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Ocean Acidification:“The Other CO2 Problem”
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/ChangeInOceanpH.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Ocean Acidification:“The Other CO2 Problem”
+\begin{picture}(350,250)
+\put(40,150){\includegraphics[height=3cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/Larvalinverts_OAdeterioration.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Ocean Acidification:“The Other CO2 Problem”
+\begin{picture}(350,250)
+\put(40,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/OAsummary_both.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE CA Current System: extreme pH & variability
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/CCS_1.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE CA Current System: extreme pH & variability
+\begin{picture}(350,250)
+\put(00,60){\includegraphics[height=5cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/CCS_2.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE CA Current System: extreme pH & variability
+\begin{picture}(350,250)
+\put(00,60){\includegraphics[height=5cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/CCS_3.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Pilot experiment: Questions & Hypotheses
+\bigskip
+\begin{text}
+1a) How does extreme ocean acidification impact purple sea urchin larval growth?
+\end{text}
+
+##\huge Pilot experiment: Questions & Hypotheses
+\bigskip
+\begin{text}
+1a) How does extreme ocean acidification impact purple sea urchin larval growth?
+
+Ho: There will be no significant difference in purple sea urchin larval length between the acidified and control pH treatments.
+\end{text}
+
+##\huge Pilot experiment: Questions & Hypotheses
+\bigskip
+\begin{text}
+1a) How does extreme ocean acidification impact purple sea urchin larval growth?
+
+Ho: There will be no significant difference in purple sea urchin larval length between the acidified and control pH treatments.
+
+1b) How will pH variability impact larval sea urchin growth?
+\end{text}
+
+##\huge Pilot experiment: Questions & Hypotheses
+\bigskip
+\begin{text}
+1a) How does extreme ocean acidification impact purple sea urchin larval growth?
+
+Ho: There will be no significant difference in purple sea urchin larval length between the acidified and control pH treatments.
+
+1b) How will pH variability impact larval sea urchin growth?
+
+Ho: There will be no significant impact of variability on larval sea urchin body length.
+\end{text}
+
+##\huge Pilot experiment: Questions & Hypotheses
+\bigskip
+\begin{text}
+1a) How does extreme ocean acidification impact purple sea urchin larval growth?
+
+Ho: There will be no significant difference in purple sea urchin larval length between the acidified and control pH treatments.
+
+1b) How will pH variability impact larval sea urchin growth?
+
+Ho: There will be no significant impact of variability on larval sea urchin body length.
+
+2) Does capture-sequencing pick up anticipated shifts in genomic diversity?
+\end{text}
+
+##\huge Power of larval selection experiments
+\begin{picture}(350,250)
+\put(-10,20){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/LarvalSelectionExperiments.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+
+##\huge Methods: pH treatments & larval system
+\bigskip
+\begin{picture}(350,250)
+\put(-20,20){\includegraphics[height=8cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/test.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge Methods: capture-sequencing
+\bigskip
+\begin{picture}(350,250)
+\put(-20,20){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/CapSeq.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+ 
+ ##\huge Results: Morphometrics
+\bigskip
+\begin{picture}(350,250)
+\put(00,40){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/morphometrics.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Morphometric data file
+\bigskip
+\begin{picture}(350,250)
+\put(80,50){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/Datafile.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge ANOVA code
+\bigskip
+\begin{picture}(350,250)
+\put(20,40){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/ANOVA_both.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge ANOVA Results
+\bigskip
+\begin{picture}(350,250)
+\put(00,40){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/ANOVAResults_both.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge ANOVA Boxplot
+\begin{picture}(350,250)
+\put(00,10){\includegraphics[height=8cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/OASV2_morphometrics_ANOVA.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge Capture-Seq Preliminary Results
+\begin{picture}(350,250)
+\put(00,30){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/PCA_1.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+ ##\huge Capture-Seq Preliminary Results
+\begin{picture}(350,250)
+\put(00,30){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/PCA_2.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Conclusion
+\begin{text}
+* Decrease in larval body length under extreme acidfication conditions
+    - will they be able to further develop and metamorphose?
+    
+* Rescue effect of pH variability
+    
+* Loss of genetic diversity as consequence of selection in response to extreme acidification
+    - capture-seq method appears promising
+\end{text}
+
+ ##\huge Acknowledgements
+\begin{picture}(350,250)
+\put(00,30){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/Acknowledgements.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+
+    
+    

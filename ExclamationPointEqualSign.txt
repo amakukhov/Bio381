@@ -1,0 +1,12 @@
+### `!=`
+#### April D. Makukhov
+This specific operator translates in R as "not equal to" (the not operator being the ! component and = indicating "equal"). This is very useful for when you want an output from vectors and dataframes that are not equal to a numeric value.
+
+```{r}
+# In this example, I am creating a vector 'x' that is made up of the following values
+x <- c(0,1,2,3,0,4,5,0,8,2,0,0,1)
+
+# Now I want to make a new vector 'y' that contains all values from except for 0, so I use the != command to specifcy "not equal to zero". 
+y <- x[which(x != 0)]
+y # notice that the output contains all the values of the x vector except for 0
+```

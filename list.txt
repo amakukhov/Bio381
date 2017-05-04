@@ -1,0 +1,23 @@
+### `list`
+#### April D. Makukhov
+This function is used to create a list in R, which can be made up of numeric values or even variable names.
+
+```{r}
+y<-list(1,2,3,4)
+y
+
+x<-list('apple','orange','strawberry','kiwi')
+x
+
+z<- c(x,y) # here is an example where I am combining the 2 lists I made above into one vector
+
+z
+
+# list is also a useful function for plotting. In this example below, we are using data that is already in R (car data), and creating a vector z that is making a list made up of components 'x' and 'y', and each of those components is equal to a column of data from the cars dataset.
+
+z <-list(x=cars[,1], y=cars[,2]) # making a list with 2 components, x and y, where x is comprised of the cars data in column 1 of the dataset, and y is comprised of the cars data in column 2 of the dataset
+
+z
+ 
+plot(z) # after creating this vector z, we can see the 2 components of the list, z$x and z$y, plotted against each other
+```

@@ -1,0 +1,11 @@
+### `xor`
+#### April D. Makukhov
+This command referred to as "exclusively OR"; it is used for when you want to make a statement in R where the outcome is one OR the other, but not both. For example, if you were flipping a coin, xor would be relevant to this situation because you can have heads or tails in a flip, but you can't have both one or the other in a flip, it can only be one (so this is an 'exclusive' OR). This function is particularly useful for TRUE/FALSE statements (or 0s and 1s).
+
+```{r}
+# creating x and y vectors made up of the same length of values, either 0 or 1 for each value
+x<-c(1,0,0,1,1)
+y<-c(0,0,1,0,1)
+xor(x,y) #When we use xor, it takes the ones that are the same, either both 0 or 1 for x and y, and outputs a "FALSE", because the exclusive OR condition is not being satisfied. However, you'll notice the first, third, and fifth, values to output a "TRUE", because the values are different at those positions in both vectors (either 0 or 1, but not both).
+
+```

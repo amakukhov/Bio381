@@ -1,0 +1,16 @@
+### `^`
+#### April D. Makukhov
+
+This symbol is an operator used in mathematics to symbolize an exponent. It can be used on numeric or complex vectors or objects labeled as a numeric value.
+
+```{r}
+10^2 # This calculates 10 to the 2nd power
+
+x=3
+y <- x^5 # Here were are setting y to be represented as x to the 5th power, using the ^ symbol to set 5 as the exponential value
+print(y)
+
+cat=12
+dog=3
+cat^dog # we can do this with characters as well as long as those characters are represented by a numeric value
+```

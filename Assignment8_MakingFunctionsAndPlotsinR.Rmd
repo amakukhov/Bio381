@@ -9,7 +9,6 @@ output: html_document
 
 ### Linear Regression: Output
 ```{r}
-# Linear Regression Output Function
 # Function: fitLinRegOutput
 # Fits a simple linear regression, provides the output only (without plot)
 # inputs: numeric vector of predictor variable 'x' and response variable 'y'
@@ -23,13 +22,13 @@ fitLinRegOutput <- function(x=runif(37),y=runif(37)){
   return(myOutput)
 }            
 
+# Running function with default settings
 fitLinRegOutput()
 ```
 
 
 ### Linear Regression: Plot
 ```{r}
-# Linear Regression Plot Function
 # Function: fitLinRegPlot
 # Plots linear regression
 # inputs: numeric vector of predictor variable 'x' and response variable 'y'
@@ -41,6 +40,7 @@ fitLinRegPlot <- function(x=runif(20),y=runif(20)){
   return(myOutput)
 }
 
+# Running function with default settings
 fitLinRegPlot()
 ```
 
@@ -65,10 +65,9 @@ fitLinRegPlot(x=x,y=y)
 
 ### ANOVA: Output
 ```{r}
-# ANOVA Output Function
 # Function: fitANOVA
 # Runs an analysis of variance test on the data, provides the output only (without plot)
-# inputs: numeric vectors xVar and yVar
+# inputs: numeric vectors xVar (predictor) and yVar (response)
 # outputs: test statistic, df, p-value
 
 
@@ -76,29 +75,156 @@ fitLinRegPlot(x=x,y=y)
 #rand<-seq(from=100,to=350,by=0.5)
 #sample(rand,150,replace=TRUE)
 
-fitANOVA <- function(xVar=as.factor(rep(c("pH_8.1","pH_7.5","pH_7.0"),each=50)), yVar= sample(seq(from=100,to=350,by=0.5), 150, replace=TRUE)){
+fitANOVA <- function(xVar=as.factor(rep(c("pH_8.1","pH_7.5","pH_7.0"),each=50)), yVar= sample(seq(from=100,to=350,by=0.1), 150, replace=TRUE)){
   dataFrame <- data.frame(xVar,yVar)
   myAOVModel <- aov(yVar~xVar,data = dataFrame)
-  
-  myAOVOutput<-c(summary(myAOVModel),print(myAOVModel))
+  myAOVOutput<-summary(myAOVModel)
   return(myAOVOutput)
 }
 
-
+# Running function with default settings
+fitANOVA()
 ```
 
 
 ### ANOVA: Plot
 ```{r}
+# Function: fitANOVAPlot
+# Plots boxplot from analysis of variance
+# inputs: numeric vectors xVar (predictor) and yVar (response)
+# outputs: boxplot
 
+fitANOVAPlot <- function(xVar=as.factor(rep(c("8.1","7.5","7.0"),each=50)), yVar= sample(seq(from=100,to=350,by=0.1), 150, replace=TRUE)){
+  dataFrame <- data.frame(xVar,yVar)
+  
+  myAOVPlot <- boxplot(yVar~xVar, data=dataFrame, col=c("red", "green", "blue"), main = "ANOVA Plot Example of pH Treatment Impact \n on Larval Urchin Body Size", xlab = "pH treatment", ylab = "body size (micrometers)")
+  return(myAOVPlot)
+}
+
+# Running function with default settings
+fitANOVAPlot()
 ```
-
 
 
 ### Testing ANOVA Functions
 ```{r}
+# Making dataframe for testing functions
+xVar <- as.factor(rep(c("8.1","7.5","7.0"),each=50))
+yVar <- sample(seq(from=100,to=350,by=0.25), 150, replace=TRUE)
+dat <- data.frame(xVar,yVar)
 
+# Testing fitANOVA function
+fitANOVA(dat)
+
+# Testing fitANOVAPlot function
+fitANOVAPlot(dat)
 ```
 
 
+## (3) Contingency Table
 
+### Contingency Table: Output
+```{r}
+# Function: ContTable
+# Computes a table from chi-square analysis
+# inputs: xVar & yVar (both discrete variables)
+# outputs: chi-squared value, df, and p-value
+
+ContTable <- function(xVar=sample(1:100, 3), yVar=sample(1:100, 3)){
+  dat <- rbind(xVar,yVar)
+  rownames(dat) <- c("Control pH", "Low pH")
+  colnames(dat) <- c("Pluteus", "Metamorph", "Juvenile")
+CSMod <- chisq.test(dat)
+return(print(CSMod))
+}
+
+# Running function with default settings
+ContTable()
+```
+
+
+### Contingency Table: Plot
+```{r}
+# Function: ContTablePlot
+# Plots results from contingency table
+# inputs: xVar & yVar (both discrete variables)
+# outputs: contingency table plot (based on chi-squared analysis)
+
+ContTablePlot <- function(xVar=sample(1:100, 3), yVar=sample(1:100, 3)){
+  dat <- rbind(xVar,yVar)
+  rownames(dat) <- c("Control pH", "Low pH")
+  colnames(dat) <- c("Pluteus", "Metamorph", "Juvenile")
+  MyPlot <- mosaicplot(x=dat, col = c("plum","pink","lightgreen"), main = "Contingency Table Plot Example")
+  return(MyPlot)
+}
+
+# Running function with default settings
+ContTablePlot()
+```
+
+
+### Testing Contingency Table Functions
+```{r}
+# Making 'fake' dataframe for analysis
+xVar2 <- c(200,173,168)
+yVar2 <- c(103,78,67)
+dat2 <- rbind(xVar2,yVar2)
+
+# Testing ContTable function
+ContTable(xVar=dat2[1,], yVar=dat2[2,])
+
+# Testing ContTablePlot function
+ContTablePlot(xVar=dat2[1,], yVar=dat2[2,])
+```
+
+
+## (4) Logistic Regression
+
+### Logistic Regression: Output
+```{r}
+# Function: LogReg
+# Describes the relationship between a dependent binary variable (y) with an independent variable (x)
+# inputs: xVar - continuous variable and yVar - discrete variable
+# outputs: slope, z-value, p-value, and deviance residuals
+
+LogReg <- function(xVar=rgamma(n=100,shape=5,scale=5), yVar=rbinom(n=100,size=1,p=0.5)) {
+  dat <- data.frame(xVar,yVar)
+  myModel <- glm(yVar~xVar, data=dat, family=binomial(link="logit"))
+return(summary(myModel))
+}
+
+# Running function with default settings
+LogReg()
+```
+
+
+### Logistic Regression: Plot
+```{r}
+# Function: LogRegPlot
+# Plots the relationship between a dependent binary variable (y) with an independent variable (x)
+# inputs: xVar - continuous variable and yVar - discrete variable
+# outputs: logistic regression plot
+
+LogRegPlot <- function(xVar=rgamma(n=100,shape=5,scale=5), yVar=rbinom(n=100,size=1,p=0.5)) {
+  dat <- data.frame(xVar,yVar)
+  MyPlot <- plot(x=dat$xVar, y=dat$yVar, main = "Example of Logistic Regression", pch=21, bg="blue2", cex=1.5)
+  return(MyPlot)
+}
+
+# Running function with default settings
+LogRegPlot()
+```
+
+
+### Testing Logistic Regression Functions
+```{r}
+# Making fake variables xVar2 and yVar2 as input
+xVar2 <- rgamma(n=500, shape=3, scale=5)
+yVar2 <- rbinom(n=500, size=1, p=0.5)
+
+# Testing LogReg function
+LogReg(x=xVar2,y=yVar2)
+
+# Testing LogRegPlot function
+LogRegPlot(x=xVar2,y=yVar2)
+```

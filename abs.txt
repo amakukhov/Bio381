@@ -1,0 +1,11 @@
+### `abs`
+#### April D. Makukhov
+This function computes the absolute value of a numeric or complex vector. Recall from mathematics that the absolute value of a number (or variable representing numbers, such as x) is the positive value of that number or variable, so using the abs function would cause your value(s) to all be positive (unless you were to use any other arithmetic operators that may change that).
+
+```{r}
+abs(2)
+abs(-2) # these outputs should be the same, because the absolute, or 'positive', value for digits 2 and -2 is "2".
+
+x <- c(2, 3, -8, -9.7, 4)
+abs(x) # here, you will notice that the outputs for all of these value, even for this more complex vector, are positive
+```
