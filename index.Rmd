@@ -62,14 +62,27 @@ output:
 
 ## Notes:
 
-####Lecture
-* Intro Notes & GitHub Lingo (handwritten in notebook)
+* [Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)
 * Tools for Thinking Hypotheses Through on Paper (handwritten in notebook)
 * [Plain-text Files & RMarkdown & LaTeX](2017-01-24-CompBioLectureNotes.txt) 
 * Plain-text Files & RMarkdown & LaTeX continued (see ClassDemos Rproject)
-
-
-
-####Lab   
-* [Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)   
-* Applying Thinking on Paper Tools to our Research/Presenting to Class (see Assignment 2 above)
+* [R Markdown Demo Part 1](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MarkdownDem.Rmd)
+* [R Markdown Demo Part 2](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MarkdownDem.R)
+* [Importing Data in R](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/DataIn.R)
+* [Data Structures in R Part 1](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/DataStructures.R)
+* [Data Structures in R Part 2](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/DataStructures2.R)
+* [Subsetting in R](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/Subsetting.R)
+* [Probability Distributions](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/ProbabilityDistributions.R)
+* [Working with Functions in R](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/WorkingWithFunctionsinR.R)
+* [MyFunctions](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MyFunctions.R)
+* [Sourcing Script](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/SourcingScript.R)
+* [Control Structures](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/ControlStructures_032817.R)
+* [For Loops](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/ForLoops.R)
+* [Function Template](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/Function_Template)
+* [Randomization Tests](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/RandomizationTests_041117.R)
+* [Markov Models Part 1](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MarkovModels.R)
+* [Markov Models Part 2](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/Markov2.R)
+* [Apply Functions](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/ApplyFunctions.R)
+* [Graphics Part 1](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/BaseGraphics.R)
+* [Graphics Part 2](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/NewGraphics.R)
+* [Histograms in R](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/HistogramCode.R)
