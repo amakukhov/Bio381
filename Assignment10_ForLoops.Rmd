@@ -1,0 +1,148 @@
+---
+title: "Assignment10_ForLoops"
+author: "April D. Garrett"
+date: "4/5/2017"
+output: html_document
+---
+
+1. Using a for or while loop, write a function to calculate the number of zeroes in a numeric vector.
+
+```{r}
+# Making numeric vector
+numZero <- rep(0:7, each=5)
+z <- vector(mode="numeric")
+
+# Creating for loop that will assign a "1" to any values that are zero
+for(i in seq_along(numZero)){
+    if(numZero[i] == 0) z[i] <- 1 else
+    z[i] <- 0 
+}
+
+# Now we sum z to determine how many zeros there are based on the for loop previously created
+sum(z)
+```
+
+2. Use subsetting instead of a loop to rewrite the function as a single line of code.
+
+```{r}
+# This determines the subset of values from the numZero vector that equal 0 and specifies its length, which corresponds to the number of zeros present (and matches the for loop example above).
+length(numZero[numZero == 0])
+```
+
+3. Write a function that takes as input a numeric vector, and returns as output the maximum difference between all possible pairs of elements. Be careful to ensure that your function works properly with both negative and positive numbers. For your first version of the function, create a vector that stores all possible pairwise differences and then extracts the maximum value from that list.
+
+```{r}
+
+# Alex's example (thanks for sharing your code, Alex!)
+x= c(-6, 7, 8, -2, 4, 5)
+
+max_diff = function(x=c(-6, 7, 8, -2, 4, 5)){
+  cols = rep(0,length(x)^2)
+  x_pairs = data.frame(cols,cols)
+  counter = 0
+  for(i in 1:length(x)){
+    for(j in 1:length(x)){
+      counter = counter + 1
+      iter_pairs<- c(x[i],x[j])
+      x_pairs[counter,] = iter_pairs
+}
+  }
+  diff = abs(x_pairs[,1] - x_pairs[,2])
+  return(max(diff))
+}
+max_diff()
+```
+
+4. Now modify the output of (3) to yield a list with 3 elements. The first list item is the pair of vector values that are the maximum distance apart, the second list item is the pair of numbers representing the position of these elements in the vector, and the third list item is the maximum distance calculated from this pair.
+
+```{r}
+x= c(-6, 7, 8, -2, 4, 5)
+
+max_diff = function(x=c(-6, 7, 8, -2, 4, 5)){
+  
+  pairs = as.matrix(expand.grid(x,x))
+  diffs = abs(pairs[,1] - pairs[,2])
+  
+  vec_max = which.max(diffs)
+  
+  pair_max = pairs[vec_max,]
+  
+  max_difference = max(diffs, na.rm = T)
+  
+  var1_vec = which(pair_max[1] == x)
+  var2_vec = which(pair_max[2] == x)
+  pair_vec = c(var1_vec, var2_vec)
+  
+  output = list(pair_max, pair_vec, max_difference)
+  
+  return(output)
+  
+}
+max_diff()
+```
+
+5. For a second version of (3), store only a temp variable that keeps track of each difference and then retains only the largest difference as it cycles through the pairwise differences.
+
+```{r}
+x= c(-6, 7, 8, -2, 4, 5)
+
+max_diff = function(x=c(-6, 7, 8, -2, 4, 5)){
+  
+  pairs = expand.grid(x,x)
+  diffs = abs(pairs$Var1 - pairs$Var2)
+  temp_max = 0
+  for(v in 1:length(diffs)){
+    
+    if(temp_max <= diffs[v]){
+      temp_max = diffs[v]
+    }
+  }
+  return(temp_max)
+}
+max_diff(x)
+```
+
+6. Write a function that takes as input two matrices, and then multiplies them together, using the rules of matrix multiplication. Your function should return a warning if the input matrices are not of the correct dimensions for matrix multiplication. Check the performance of your function by comparing with the built in R function for matrix multiplication %*%.
+
+```{r}
+m1 = matrix(c(1:4),2,2, byrow = T)
+m2 = matrix(c(5:8),2,2, byrow = T)
+
+matrix_multpl = function(m1, m2){
+  # create a new matrix table
+  m3 = matrix(0, nrow(m1), ncol(m2))
+  if (nrow(m1) != ncol(m2)){
+    cat("input matrices are not correct dimensions", "\n")
+  } else {
+    for (nr in 1:nrow(m1)){
+      for (nc in 1:ncol(m2)){
+        cell_val = sum(m1[nr,]*m2[,nc])
+        m3[nr,nc] = cell_val
+      }
+    }
+  }
+  return(m3)
+}
+
+matrix_multpl(m1, m2)
+
+m1%*%m2
+```
+
+7. Write a function that takes as input two integers representing the number of rows and columns in a matrix. The output is a matrix of these dimensions in which each element is the product of the row number x the column number.
+
+```{r}
+m1 = matrix(c(1:10),2,5, byrow = T)
+
+matrix_prod = function(nr, nc){
+  m = matrix(0, nr, nc)
+  for (r in 1:nr){
+    for (c in 1:nc){
+      m[r,c] = r*c
+    } 
+  }
+  return(m)
+}
+matrix_prod(4, 6)
+```
+
