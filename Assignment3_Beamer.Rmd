@@ -1,0 +1,144 @@
+---
+output: beamer_presentation
+---
+## \huge Genomic, physiological, and transgenerational responses of sea urchins to ocean acidification     
+\bigskip
+\bigskip
+\begin{center}
+\LARGE April D. Makukhov
+\end{center}
+\begin{center}
+\small Committee Meeting \#2
+\end{center}
+\begin{center}
+\small December 16, 2016
+\end{center}
+\begin{picture}(350,250)
+\put(120,150){\includegraphics[height=3.5cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/UrchinSpawning.png}}
+\put(00,00){\begin{minipage}[t]{1\linewidth}
+\end{minipage}}
+\end{picture}
+
+##\LARGE Experimental Evolution & OA
+\bigskip
+\begin{text}
+  * Pespeni et al. 2013
+\end{text}
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/PespeniPNAS.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Loss of Genetic Diversity - OA
+\bigskip
+\begin{text}
+  * Lloyd, Makukhov, and Pespeni 2016
+\end{text}
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/Lloydetal2016.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Extreme pH and variability in upwelling systems
+\bigskip
+\begin{text}
+  * Yu et al. 2011, Evans et al. 2013
+\end{text}
+\begin{picture}(350,250)
+\put(10,60){\includegraphics[height=6cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/upwelling.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Questions
+\bigskip
+\begin{text}
+ - (1a) What are the genetic targets of selection in response to end-of-century pH/pCO2 conditions, and are these targets the same under more extreme conditions beyond what is currently experienced in nature?
+
+ - (1b) Will variations in pCO2/pH rescue sea urchin responses to future and extreme conditions?
+
+
+ - (2) Are the same genes targeted before and after metamorphosis and, if not, what genes are targeted?
+
+
+ - (3a) How do future conditions impact sea urchin physiology and fitness? 
+
+ - (3b)What are the transgenerational impacts of ocean acidification on marine organisms with longer generation times?
+\end{text}
+
+##
+\begin{text}
+ - Question 1a: What are the genetic targets of selection in response to end-of-century pH/pCO2 conditions, and are these targets the same under more extreme conditions beyond what is currently experienced in nature?
+
+ - Hypothesis: Genes that are important for responding to future ocean acidification will be targeted by selection; however, under more extreme conditions, sea urchins will show signs of physiological stress, stunted development, and loss of genetic response.
+\end{text}
+
+##
+\begin{text}
+ - Question 1b: Will variations in pCO2/pH rescue sea urchin responses to future and extreme conditions?
+
+ - Hypothesis: These physiological and genetic responses to future and extreme ocean acidification conditions will be partially rescued or different in the variable treatment.
+\end{text}
+
+##
+\begin{text}
+ - Question 2: Are the same genes targeted before and after metamorphosis and, if not, what genes are targeted?
+
+ - Hypothesis: There will be some overlap of genes targeted by selection before and after metamorphosis under future conditions, but also additional new genes specifically important to this developmental stage. Under the extreme pCO2/pH condition, metamorphosis will not occur; this response will be rescued in the variable treatment.
+\end{text}
+
+##
+\begin{text}
+ - Question 3a: How do future conditions impact sea urchin physiology and fitness? 
+
+ - Hypothesis: Future ocean acidification conditions will negatively impact sea urchin physiology and fitness, particularly extreme conditions. 
+\end{text}
+
+##
+\begin{text}
+ - Question 3b: What are the transgenerational impacts of ocean acidification on sea urchins?
+
+ - Hypothesis: The next generation (F2) of sea urchins will be primed in their responses to end-of-century ocean acidification. Still thinking on the more extreme condition…
+\end{text}
+
+
+##
+\begin{picture}(350,250)
+\put(00,10){\includegraphics[height=8cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/Methods.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Morphometrics - preliminary
+\begin{picture}(350,250)
+\put(00,30){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/morphometrics.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\huge Morphometrics - preliminary
+\begin{picture}(350,250)
+\put(-10,30){\includegraphics[height=7cm]
+{/Users/amakukhov/Desktop/ComputationalBiology_SPRING2017/Bio381/images/morphs2.png}}
+ \put(00,00){\begin{minipage}[t]{1\linewidth}
+ \end{minipage}}
+\end{picture}
+
+##\LARGE Experimental Design
+\begin{text}
+ - 6 treatments: 8.0 (control), 7.5, \& 7.0 – 3 static and 3 variables
+
+ - Sample D1 for -omics, D7 for morphometrics, mortality, \& -omics (larval selection)
+
+ - Sample before \& after metamorphosis (~40-50 days after fertilizaton) for -omics, morphometrics \& mortality (before)
+
+ - Rear 60 metamorphs from 3 treatments in adult tanks \& measure their growth, response to disease or temperature stress, etc. \& spawn those for larval selection experiment (~2 years)
+\end{text}

@@ -21,7 +21,6 @@ output: beamer_presentation
 \end{picture}
 
 
-
 ##\LARGE Ocean Acidification:“The Other CO2 Problem”
 \begin{picture}(350,250)
 \put(10,60){\includegraphics[height=6cm]

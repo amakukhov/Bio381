@@ -28,7 +28,10 @@ output:
 
 * Assignment 1: Links and fun fact emailed to Nick     
 * [Assignment 2](Homework02.html)
-* Assignment 3: Uploading soon, was sick :(
+* Assignment 3: Beamer
+    + [Powerpoint](2016-12-16-Makukhov-CommitteeMeeting2-Project1.pptx)
+    + [Beamer Slides RMarkdown File](Assignment3_Beamer.Rmd)
+    + [Beamer PDF Slides](Assignment3_Beamer.pdf)
 * Assignment 4: Data upload & Regular Expressions
     + [Uploading Data in R](Assignment4_DataUploadInR.html)
     + [Regular Expressions](Assignment4_RegEx.html)
@@ -60,13 +63,13 @@ output:
 ## Notes:
 
 ####Lecture
-* January 17, 2017: Intro Notes & GitHub Lingo (handwritten in notebook)
-* January 19, 2017: Tools for Thinking Hypotheses Through on Paper (handwritten in notebook)
-* [January 24, 2017: Plain-text Files & RMarkdown & LaTeX](2017-01-24-CompBioLectureNotes.txt) 
-* January 26, 2017: Plain-text Files & RMarkdown & LaTeX continued (see ClassDemos Rproject)
+* Intro Notes & GitHub Lingo (handwritten in notebook)
+* Tools for Thinking Hypotheses Through on Paper (handwritten in notebook)
+* [Plain-text Files & RMarkdown & LaTeX](2017-01-24-CompBioLectureNotes.txt) 
+* Plain-text Files & RMarkdown & LaTeX continued (see ClassDemos Rproject)
 
 
 
 ####Lab   
-* [January 18, 2017: Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)   
-* January 25, 2017: Applying Thinking on Paper Tools to our Research/Presenting to Class (see Assignment 2 above)
+* [Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)   
+* Applying Thinking on Paper Tools to our Research/Presenting to Class (see Assignment 2 above)
