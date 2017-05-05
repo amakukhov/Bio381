@@ -65,7 +65,6 @@ output:
 * [Intro to GitHub, RMarkdown, and Making Homepage](2017-01-18-NotesOnGitHubSetup-Intro.txt)
 * Tools for Thinking Hypotheses Through on Paper (handwritten in notebook)
 * [Plain-text Files & RMarkdown & LaTeX](2017-01-24-CompBioLectureNotes.txt) 
-* Plain-text Files & RMarkdown & LaTeX continued (see ClassDemos Rproject)
 * [R Markdown Demo Part 1](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MarkdownDem.Rmd)
 * [R Markdown Demo Part 2](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/MarkdownDem.R)
 * [Importing Data in R](/Users/amakukhov/Desktop/ClassDemos/LectureNotes/DataIn.R)
