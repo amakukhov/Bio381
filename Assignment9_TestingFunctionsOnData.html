@@ -124,7 +124,30 @@ $(document).ready(function () {
 </div>
 
 
+<pre class="r"><code>urchin &lt;-read.table(&quot;Spurp_OASV2_LarvalLengths.csv&quot;,header = T,sep=&quot;,&quot;)
+head(urchin)</code></pre>
+<pre><code>##   Larval_ID Vessel_ID Treatment    Size
+## 1         1       V15     8_0_S 257.035
+## 2         2       V15     8_0_S 298.416
+## 3         3       V15     8_0_S 256.064
+## 4         4       V15     8_0_S 314.013
+## 5         5       V15     8_0_S 322.715
+## 6         6       V15     8_0_S 296.175</code></pre>
+<pre class="r"><code>fitANOVA &lt;- function(data=urchin){
+  xVar = urchin[,3]
+  yVar = urchin[,4]
+  myAOVModel &lt;- aov(yVar~xVar,data = data)
+  myAOVOutput&lt;-summary(myAOVModel)
+  return(myAOVOutput)
+}
 
+# Using my larval urchin morphometric data
+fitANOVA(urchin)</code></pre>
+<pre><code>##              Df  Sum Sq Mean Sq F value Pr(&gt;F)    
+## xVar          5 1421469  284294   355.1 &lt;2e-16 ***
+## Residuals   582  465916     801                   
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 
 
 

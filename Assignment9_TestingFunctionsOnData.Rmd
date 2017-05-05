@@ -6,6 +6,43 @@ output: html_document
 ---
 
 ```{r}
+# Reading in my data
+urchin <-read.table("Spurp_OASV2_LarvalLengths.csv",header = T,sep=",")
+head(urchin)
 
+# Running my one-way ANOVA function on my data
+fitANOVA <- function(data=urchin){
+  xVar = urchin[,3]
+  yVar = urchin[,4]
+  myAOVModel <- aov(yVar~xVar,data = data)
+  myAOVOutput<-summary(myAOVModel)
+  return(myAOVOutput)
+}
+
+
+fitANOVA(urchin)
+
+# Running my ANOVA Plot function on my data
+fitANOVA <- function(data=urchin){
+  xVar = urchin[,3]
+  yVar = urchin[,4]
+  myAOVModel <- aov(yVar~xVar,data = data)
+  myAOVOutput<-summary(myAOVModel)
+  return(myAOVOutput)
+}
+
+# Using my larval urchin morphometric data
+fitANOVA(urchin)
+
+
+fitANOVAPlot <- function(data=urchin){
+  xVar = urchin[,3]
+  yVar = urchin[,4]
+  myAOVPlot <- boxplot(yVar~xVar, data=data, col=c("red", "pink", "green", "lightgreen", "blue", "lightblue"), main = "ANOVA Plot Example of pH Treatment Impact \n on Larval Urchin Body Size", xlab = "pH treatment", ylab = "body size (micrometers)")
+  return(myAOVPlot)
+}
+
+# Running function with default settings
+fitANOVAPlot(urchin)
 ```
 

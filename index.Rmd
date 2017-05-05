@@ -53,7 +53,7 @@ output:
     + [Assignment](Assignment8_MakingFunctionsAndPlotsinR.html)
     + [Notes](HW8_Script.R)
 * Assignment 9: Running models on own data & random dataset
-    + Assignment
+    + [Assignment](Assignment9_TestingFunctionsOnData.Rmd)
 * Assignment 10: For loops
     + [Assignment](Assignment10_ForLoops.html)
 * Assignment 11: Spatial analysis in R
